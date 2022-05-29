@@ -1,0 +1,17 @@
+{
+	"name": "Archlinux",
+	"dockerFile": "Dockerfile",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind" ],
+	"overrideCommand": false,
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [],
+	"remoteUser": "vscode"
+}
